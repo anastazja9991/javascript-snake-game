@@ -81,8 +81,8 @@ function loop() {
         snake.maxCells = 4;
         snake.dx = grid;
         snake.dy = 0;
-        apple.x = getRandom(0, 25) * grid;
-        apple.y = getRandom(0, 25) * grid;
+        elm.x = getRandom(0, 25) * grid;
+        elm.y = getRandom(0, 25) * grid;
       }
     }
   });
