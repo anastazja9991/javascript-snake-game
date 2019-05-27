@@ -88,6 +88,35 @@ function loop() {
   });
 }
 
+function leftFunction(){
+	snake.dx=-grid,
+	snake.dy=0,
+	document.getElementById('btn-right').disabled = true;
+	document.getElementById('btn-top').disabled = false;
+	document.getElementById('btn-down').disabled = false;
+	}
+function topFunction(){
+	snake.dy=-grid,
+	snake.dx=0,
+	document.getElementById('btn-down').disabled = true;
+	document.getElementById('btn-right').disabled = false;
+	document.getElementById('btn-left').disabled = false;
+	}
+function rightFunction(){
+	snake.dx=grid,
+	snake.dy=0,
+	document.getElementById('btn-left').disabled = true;
+	document.getElementById('btn-top').disabled = false;
+	document.getElementById('btn-down').disabled = false;
+}
+function downFunction(){
+	snake.dy=grid,
+	snake.dx=0,
+	document.getElementById('btn-top').disabled = true;
+	document.getElementById('btn-left').disabled = false;
+	document.getElementById('btn-right').disabled = false;
+	}
+
 document.addEventListener('keydown', function(e) {
   
   if (e.which === 37 && snake.dx === 0) {
