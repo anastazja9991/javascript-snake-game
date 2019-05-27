@@ -2,7 +2,11 @@
 <html lang="pl">
 <head>
   <title>Snake Game</title>
-  <meta charset="utf-8"/>
+  	<meta charset="utf-8"/>
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+	<link rel="stylesheet" href="style.css"/>
 	<style>
 		canvas {
 		 background:#808000;
@@ -42,11 +46,22 @@
 <body>
 <div class="header">
 	<h1>NAKARM WĘŻA</h1>
+</div>
+	
 <div class="box">
 	<canvas width="400" height="400" id="mysnakegame"></canvas>
 </div>
 	<div id="score">PUNKTY: 0</div>
-</div>
+	<div class="box-buttons">
+		<button id="btn-top" onclick="topFunction();"><i class="fas fa-chevron-up"></i></button>
+
+		<button id="btn-down" onclick="downFunction();"><i class="fas fa-chevron-down"></i></button>
+
+		<button id="btn-left" onclick="leftFunction();"><i class="fas fa-chevron-left"></i></button>
+	
+		<button id="btn-right" onclick="rightFunction();"><i class="fas fa-chevron-right"></i></button>
+	</div>
+	
 <script src="snake.js"></script>
 </body>
 </html>
